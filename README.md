@@ -12,29 +12,6 @@ At this point you can just attempt to run the server with `npm start`.
 
 If you wish to have some more detailed monitoring you can run `npm run dev`
 
-## Commands
-The bot currently consists of the following commands.
-- !add
-  - Syntax
-    - !add XXX-XXX-XXX
-  - Returns
-    - Success or failure from server
-- !status
-  - Syntax
-    - !status XXX-XXX-XXX
-  - Returns
-    - Current status of the course that is requested
-- !list
-  - Syntax
-    - !list
-  - Returns
-    - A message with a link to LIST_ADDRESS from your .env or settings on Heroku
-- !next
-  - Syntax
-    - !next
-  - Returns
-    - A message with the next unplayed course and who submitted it.
-
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
