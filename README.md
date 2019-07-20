@@ -24,9 +24,6 @@ Rename `.env.example` to `.env` and assign the variables as appropriate
 
 Note that if you are deploying via Heroku you **must** set each item in the .env in your settings panel or else it will not work.
 
-## Configuring Discord
-1. Go to the [**Discord Developer Page**](https://discordapp.com/developers/applications/) and click on the **New Application button**
-
 ## Running
 At this point you can just attempt to run the server with `npm start`.
 
