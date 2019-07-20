@@ -38,6 +38,18 @@ Click on **Copy** and either save it somewhere, or add it to your `.env` as `BOT
 
 Alright, the bot creation in the Discord Developer Panel is complete!
 
+## Adding the bot to our Discord server
+This section assumes you already have a Discord Server and administrative access over it.
+1. Go to the **OAuth2** section of our bot in the Discord Developer Panel<br />
+![OAuth2](https://user-images.githubusercontent.com/399379/61584396-def7fb00-ab14-11e9-86ba-90671579d555.png)
+2. Under **SCOPES** SELECT **bot**.<br />
+![Scopes](https://user-images.githubusercontent.com/399379/61584406-0f3f9980-ab15-11e9-99f4-e0f531b41452.png)
+3. You will also want to ensure the bot can view and send messages, so make sure to set the Bot Permissions accordingly.<br />
+![Bot Permissions](https://user-images.githubusercontent.com/399379/61584431-82491000-ab15-11e9-82f9-a34876b5f786.png)
+4. Copy the URL that has been generated at the bottom of **Scopes** and open a new tab or web browser window and paste that URL in and go to that page. It will look something like this.<br />
+![Connect Bot](https://user-images.githubusercontent.com/399379/61584465-1a46f980-ab16-11e9-89e8-c7b1901ade9e.png)
+5. Select the appropriate server and your bot has been added (it may not necessarily be marked as connected right now, it won't until you run the bot.)
+
 ## Configuring the Bot
 Rename `.env.example` to `.env` and assign the variables as appropriate
 
