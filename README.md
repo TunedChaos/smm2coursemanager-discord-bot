@@ -19,6 +19,25 @@ Use the Node.js&reg; Package Manager to install prerequisites.
 npm install
 ```
 
+## Discord Bot Creation
+1. Go to the (Discord Developer Page)[https://discordapp.com/developers/applications/] and click **New Application** it will look something like this.<br />
+![Discord Developer Page](https://user-images.githubusercontent.com/399379/61584228-11ecbf80-ab12-11e9-85f1-7a16c2e53b0a.png)
+2. Give your application a name, you can give it an avatar if you want<br />
+![Applicatoin Name](https://user-images.githubusercontent.com/399379/61584256-a1926e00-ab12-11e9-8020-e896188dc8c6.png)
+3. Copy and/or remember the **Client ID**, or place it into your `.env` file right now as `BOT_USER_ID`.<br />
+![ClientID](https://user-images.githubusercontent.com/399379/61584319-94c24a00-ab13-11e9-8a38-1cce23315e87.png)
+4. On the left click the **Bot** selection under Settings<br />
+![Click Bot](https://user-images.githubusercontent.com/399379/61584276-f635e900-ab12-11e9-9062-3f7c8441b491.png)
+5. Click on **Add Bot** then click on **Yes, do it!**<br />
+![Add Bot](https://user-images.githubusercontent.com/399379/61584293-25e4f100-ab13-11e9-83a0-817bcb9c2479.png)
+6. You should get a message saying **"A wild bot has appeared!"**<br />
+![A wild bot!](https://user-images.githubusercontent.com/399379/61584346-026e7600-ab14-11e9-8fa7-ce5da28e4f53.png)
+7. Below your bots **Username** you can see something that looks like this.<br />
+![Token](https://user-images.githubusercontent.com/399379/61584361-4b262f00-ab14-11e9-8aab-b0113b1f560d.png)<br />
+Click on **Copy** and either save it somewhere, or add it to your `.env` as `BOT_TOKEN`
+
+Alright, the bot creation in the Discord Developer Panel is complete!
+
 ## Configuring the Bot
 Rename `.env.example` to `.env` and assign the variables as appropriate
 
