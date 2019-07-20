@@ -20,7 +20,7 @@ npm install
 ```
 
 ## Discord Bot Creation
-1. Go to the (Discord Developer Page)[https://discordapp.com/developers/applications/] and click **New Application** it will look something like this.<br />
+1. Go to the [Discord Developer Page](https://discordapp.com/developers/applications/) and click **New Application** it will look something like this.<br />
 ![Discord Developer Page](https://user-images.githubusercontent.com/399379/61584228-11ecbf80-ab12-11e9-85f1-7a16c2e53b0a.png)
 2. Give your application a name, you can give it an avatar if you want<br />
 ![Applicatoin Name](https://user-images.githubusercontent.com/399379/61584256-a1926e00-ab12-11e9-8020-e896188dc8c6.png)
