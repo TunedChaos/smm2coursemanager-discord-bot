@@ -7,11 +7,6 @@ SMM2CourseManager Server is a utility meant for serving up an interface between 
 ## Installation, Configuration, and Usage
 Available in the [Wiki](https://github.com/TunedChaos/smm2coursemanager-discord-bot/wiki)
 
-## Running
-At this point you can just attempt to run the server with `npm start`.
-
-If you wish to have some more detailed monitoring you can run `npm run dev`
-
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
