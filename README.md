@@ -18,7 +18,6 @@ Use the Node.js&reg; Package Manager to install prerequisites.
 ```bash
 npm install
 ```
-It is safe to ignore the warnings as these are prerequisites for different functions that the <a href="https://discord.js.org" target="_blank">Discord.JS</a> library has, but are not used in this project.
 
 ## Configuring the Bot
 Rename `.env.example` to `.env` and assign the variables as appropriate
