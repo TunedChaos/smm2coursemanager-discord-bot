@@ -4,51 +4,8 @@ This is a Discord bot meant for handling interaction with the SMM2 Course Manage
 
 SMM2CourseManager Server is a utility meant for serving up an interface between the database that the SMM2Coursemanager uses, and any clients that wish to connect to it.
 
-## Prerequisites
-- <a href="https://nodejs.org" target="_blank">Node.js&reg;</a>
-- <a href="https://github.com/TunedChaos/smm2coursemanager-server" target="_blank">SMM2CourseManager Server</a>
-  - Or access to someone who has it deployed
-## Installation
-Clone this repository to the device you intend to use as your server.
-```bash
-git clone https://github.com/TunedChaos/smm2coursemanager-discord-bot.git
-```
-
-Use the Node.js&reg; Package Manager to install prerequisites.
-```bash
-npm install
-```
-
-## Discord Bot Creation
-1. Go to the [Discord Developer Page](https://discordapp.com/developers/applications/) and click **New Application** it will look something like this.<br />
-![Discord Developer Page](https://user-images.githubusercontent.com/399379/61584228-11ecbf80-ab12-11e9-85f1-7a16c2e53b0a.png)
-2. Give your application a name, you can give it an avatar if you want<br />
-![Applicatoin Name](https://user-images.githubusercontent.com/399379/61584256-a1926e00-ab12-11e9-8020-e896188dc8c6.png)
-3. Copy and/or remember the **Client ID**, or place it into your `.env` file right now as `BOT_USER_ID`.<br />
-![ClientID](https://user-images.githubusercontent.com/399379/61584319-94c24a00-ab13-11e9-8a38-1cce23315e87.png)
-4. On the left click the **Bot** selection under Settings<br />
-![Click Bot](https://user-images.githubusercontent.com/399379/61584276-f635e900-ab12-11e9-9062-3f7c8441b491.png)
-5. Click on **Add Bot** then click on **Yes, do it!**<br />
-![Add Bot](https://user-images.githubusercontent.com/399379/61584293-25e4f100-ab13-11e9-83a0-817bcb9c2479.png)
-6. You should get a message saying **"A wild bot has appeared!"**<br />
-![A wild bot!](https://user-images.githubusercontent.com/399379/61584346-026e7600-ab14-11e9-8fa7-ce5da28e4f53.png)
-7. Below your bots **Username** you can see something that looks like this.<br />
-![Token](https://user-images.githubusercontent.com/399379/61584361-4b262f00-ab14-11e9-8aab-b0113b1f560d.png)<br />
-Click on **Copy** and either save it somewhere, or add it to your `.env` as `BOT_TOKEN`
-
-Alright, the bot creation in the Discord Developer Panel is complete!
-
-## Adding the bot to our Discord server
-This section assumes you already have a Discord Server and administrative access over it.
-1. Go to the **OAuth2** section of our bot in the Discord Developer Panel<br />
-![OAuth2](https://user-images.githubusercontent.com/399379/61584396-def7fb00-ab14-11e9-86ba-90671579d555.png)
-2. Under **SCOPES** SELECT **bot**.<br />
-![Scopes](https://user-images.githubusercontent.com/399379/61584406-0f3f9980-ab15-11e9-99f4-e0f531b41452.png)
-3. You will also want to ensure the bot can view and send messages, so make sure to set the Bot Permissions accordingly.<br />
-![Bot Permissions](https://user-images.githubusercontent.com/399379/61584431-82491000-ab15-11e9-82f9-a34876b5f786.png)
-4. Copy the URL that has been generated at the bottom of **Scopes** and open a new tab or web browser window and paste that URL in and go to that page. It will look something like this.<br />
-![Connect Bot](https://user-images.githubusercontent.com/399379/61584465-1a46f980-ab16-11e9-89e8-c7b1901ade9e.png)
-5. Select the appropriate server and your bot has been added (it may not necessarily be marked as connected right now, it won't until you run the bot.)
+## Installation and configuration
+Available in the [Wiki](https://github.com/TunedChaos/smm2coursemanager-discord-bot/wiki)
 
 ## Configuring the Bot
 Rename `.env.example` to `.env` and assign the variables as appropriate
