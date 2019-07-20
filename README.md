@@ -4,13 +4,8 @@ This is a Discord bot meant for handling interaction with the SMM2 Course Manage
 
 SMM2CourseManager Server is a utility meant for serving up an interface between the database that the SMM2Coursemanager uses, and any clients that wish to connect to it.
 
-## Installation and configuration
+## Installation, Configuration, and Usage
 Available in the [Wiki](https://github.com/TunedChaos/smm2coursemanager-discord-bot/wiki)
-
-## Configuring the Bot
-Rename `.env.example` to `.env` and assign the variables as appropriate
-
-Note that if you are deploying via Heroku you **must** set each item in the .env in your settings panel or else it will not work.
 
 ## Running
 At this point you can just attempt to run the server with `npm start`.
