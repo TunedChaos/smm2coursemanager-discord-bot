@@ -2,4 +2,4 @@ language: node_js
 node_js: '6'
 
 script:
-  - if test -z "$TRAVIS_TAG"; npm run test ; fi
+  - if test -z "$TRAVIS_TAG"; then npm run test ; fi
