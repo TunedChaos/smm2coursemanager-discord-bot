@@ -1,5 +1,9 @@
 language: node_js
 node_js: '6'
 
+install:
+- npm install
+- npm update
+
 script:
   - if test -z "$TRAVIS_TAG"; then npm run test ; fi
