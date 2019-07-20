@@ -1,13 +1,13 @@
-[![Build Status](https://travis-ci.org/TunedChaos/smm2coursemanager-discord-bot.svg?branch=master)](https://travis-ci.org/TunedChaos/smm2coursemanager-discord-bot) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<a href="https://travis-ci.org/TunedChaos/smm2coursemanager-discord-bot" target="_blank"><img src="https://travis-ci.org/TunedChaos/smm2coursemanager-discord-bot.svg?branch=master" alt="Build Status"></a> <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 # SMM2CourseManager Discord Bot
 This is a Discord bot meant for handling interaction with the SMM2 Course Manager Server.
 
 SMM2CourseManager Server is a utility meant for serving up an interface between the database that the SMM2Coursemanager uses, and any clients that wish to connect to it.
 
 ## Prerequisites
-- [Node.js&reg;](https://nodejs.org)
-- [SMM2CourseManager Server](https://github.com/TunedChaos/smm2coursemanager-server)
-Or access to someone who has it deployed
+- <a href="https://nodejs.org" target="_blank">Node.js&reg;</a>
+- <a href="https://github.com/TunedChaos/smm2coursemanager-server" target="_blank">SMM2CourseManager Server</a>
+  - Or access to someone who has it deployed
 ## Installation
 Clone this repository to the device you intend to use as your server.
 ```bash
@@ -57,6 +57,3 @@ The bot currently consists of the following commands.
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://github.com/TunedChaos/smm2coursemanager-server/blob/master/LICENSE)
