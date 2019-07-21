@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/TunedChaos/smm2coursemanager-discord-bot.svg?branch=master)](https://travis-ci.org/TunedChaos/smm2coursemanager-discord-bot) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/TunedChaos/smm2coursemanager-discord-bot/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/TunedChaos/smm2coursemanager-discord-bot.svg?branch=master)](https://travis-ci.org/TunedChaos/smm2coursemanager-discord-bot) [![License: MIT](https://img.shields.io/github/license/tunedchaos/smm2coursemanager-discord-bot.svg)](https://github.com/TunedChaos/smm2coursemanager-discord-bot/blob/master/LICENSE)
+
 # SMM2CourseManager Discord Bot
 This is a Discord bot meant for handling interaction with the SMM2 Course Manager Server.
 
