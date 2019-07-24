@@ -1,7 +1,7 @@
 {
   "name": "smm2coursemanager-discord-bot",
   "productName": "SMM2 Course Manager Discord Bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a bot meant for handling interaction with the SMM2 Course Manager Server.",
   "main": "index.js",
   "scripts": {
