@@ -11,13 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TunedChaos/smm2coursemanager-client.git"
+    "url": "https://github.com/TunedChaos/smm2coursemanager-discord-bot.git"
   },
   "keywords": [
     "mariomaker2",
     "nintendo",
     "switch",
-    "smm2coursemanager"
+    "smm2coursemanager",
+    "discord"
   ],
   "author": {
     "name": "Tuned Chaos LLC"
