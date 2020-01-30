@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TunedChaos/smm2coursemanager-discord-bot.git"
+    "url": "git+https://github.com/TunedChaos/smm2coursemanager-discord-bot.git"
   },
   "keywords": [
     "mariomaker2",
@@ -24,13 +24,16 @@
     "name": "Tuned Chaos LLC"
   },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TunedChaos/smm2coursemanager-discord-bot/issues"
+  },
   "homepage": "https://github.com/TunedChaos/smm2coursemanager-discord-bot",
   "dependencies": {
     "discord.js": "^11.5.1",
-    "dotenv": "^8.0.0",
-    "socket.io-client": "^2.2.0"
+    "dotenv": "^8.2.0",
+    "socket.io-client": "^2.3.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.4"
   }
 }
