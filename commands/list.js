@@ -14,7 +14,7 @@ module.exports = message => {
             .catch(console.error)
         }
     }else{
-        message.channel.send(`${message.author}, there is currentnly no list available.`)
+        message.channel.send(`${message.author}, there is currently no list available.`)
             .then(message => console.log(`Sent message: ${message.content}`))
             .catch(console.error)
     }
