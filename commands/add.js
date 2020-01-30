@@ -2,11 +2,10 @@ const path = require('path')
 require('dotenv').config({path: path.resolve(__dirname + '../.env')})
 const io = require('socket.io-client')
 var socket = io.connect(process.env.SERVER_ADDRESS)
-const common = require('../common')
 
-function addCourse(personName, courseCode) {
+function addCourse(requestPlatform, requestPlatformID, personName, courseCode) {
     return new Promise(resolve => {
-        socket.emit('add_course', personName, courseCode, process.env.AUTHCODE)
+        socket.emit('add_course', requestPlatform, requestPlatformID, personName, courseCode, process.env.AUTHCODE)
         socket.on('course_add', response => {
             resolve(response)
         })
@@ -14,23 +13,18 @@ function addCourse(personName, courseCode) {
 }
 
 module.exports = message => {
-    var messageContent = message.content;
-    var personName = common.getPersonName(message.author.id, message)
-    var commandContent = common.getCommand(message.author.id, message)
-
-    var messageRegex = /^!add [a-hj-np-y\d]{3}( |-)[a-hj-np-y\d]{3}( |-)[a-hj-np-y\d]{3}$/gi;
-    if(commandContent.match(messageRegex) !== null){
-        var courseCode = messageContent.substr(messageContent.indexOf("!add") + 5, 12)
-        addCourse(personName,courseCode)
-        .then(response => {
-            responseMessage = JSON.parse(response).personalMessage
-            message.channel.send(responseMessage)
-                .then(message => console.log(`Sent message: ${message.content}`))
-                .catch(console.error)
-        })
-    }else{
-        message.channel.send(personName + ", please enter in the form of !add XXX-XXX-XXX")
+    var personName = message.author.username
+    var personID = message.author.id
+    var courseCode = message.content.substr(message.content.indexOf("!add") + 5, 12)
+    addCourse('Discord',personID,personName,courseCode)
+    .then(response => {
+        jsonResponse = JSON.parse(response)
+        responseMessage = `${message.author}, ${jsonResponse.message}`
+        message.channel.send(responseMessage)
             .then(message => console.log(`Sent message: ${message.content}`))
             .catch(console.error)
-    }
+    })
+    .catch(err => {
+        console.log(err)
+    })
 }

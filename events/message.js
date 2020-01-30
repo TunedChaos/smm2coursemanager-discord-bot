@@ -9,31 +9,31 @@ module.exports = (client, message) => {
     if(message.channel.id === process.env.CHANNEL_ID && message.author.id !== process.env.BOT_USER_ID)
     {
         var messageContent = message.content.toLowerCase()
-        if (messageContent.includes("!add"))
+        if (messageContent.startsWith("!add"))
         {
             return add(message)
         }
-        else if(messageContent.includes("!status"))
+        else if(messageContent.startsWith("!status"))
         {
             return status(message)
         }
-        else if(messageContent.includes("!playing"))
+        else if(messageContent.startsWith("!playing"))
         {
             return playing(message)
         }
-        else if(messageContent.includes("!list"))
+        else if(messageContent.startsWith("!list"))
         {
             return list(message)
         }
-        else if(messageContent.includes("!next"))
+        else if(messageContent.startsWith("!next"))
         {
             return next(message)
         }
-        else if(messageContent.includes("!queue"))
+        else if(messageContent.startsWith("!queue"))
         {
             return queue(message)
         }
-        else if(messageContent.includes("!position"))
+        else if(messageContent.startsWith("!position"))
         {
             return position(message)
         }
