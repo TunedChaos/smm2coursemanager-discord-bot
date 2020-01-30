@@ -3,7 +3,7 @@ require('dotenv').config({path: path.resolve(__dirname + '../.env')})
 const io = require('socket.io-client')
 var socket = io.connect(process.env.SERVER_ADDRESS)
 
-function getQueue(personName, courseCode) {
+function getQueue(personName) {
     return new Promise(resolve => {
         socket.emit('course_queue', personName)
         socket.on('queue_course', response => {
