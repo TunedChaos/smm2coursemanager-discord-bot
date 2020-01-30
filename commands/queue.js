@@ -5,7 +5,7 @@ var socket = io.connect(process.env.SERVER_ADDRESS)
 
 function getQueue(personName, courseCode) {
     return new Promise(resolve => {
-        socket.emit('course_queue', personName, courseCode)
+        socket.emit('course_queue', personName)
         socket.on('queue_course', response => {
             resolve(response)
         })
@@ -13,9 +13,7 @@ function getQueue(personName, courseCode) {
 }
 
 module.exports = message => {
-    var personName = message.author.username
-    var courseCode = message.content.substr(message.content.indexOf("!queue") + 8, 11)
-    getQueue(personName,courseCode)
+    getQueue(message.author.username)
     .then(response => {
         jsonResponse = JSON.parse(response)
         responseMessage = `${message.author}, ${jsonResponse.message}`

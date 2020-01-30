@@ -2,10 +2,11 @@ const path = require('path')
 require('dotenv').config({path: path.resolve(__dirname + '../.env')})
 const io = require('socket.io-client')
 var socket = io.connect(process.env.SERVER_ADDRESS)
+var commandPrefix = process.env.COMMAND_PREFIX
 
 function getPosition(personName, courseCode) {
     return new Promise(resolve => {
-        socket.emit('course_position', personName, courseCode)
+        socket.emit('course_position', `${commandPrefix}position` , personName, courseCode)
         socket.on('position_course', response => {
             resolve(response)
         })
@@ -15,7 +16,7 @@ function getPosition(personName, courseCode) {
 module.exports = message => {
     var messageContent = message.content;
     var personName = message.author.username
-    var courseCode = messageContent.substr(messageContent.indexOf("!position") + 10, 11)
+    var courseCode = messageContent.substr(messageContent.indexOf(`${commandPrefix}position`) + 10, 11)
     getPosition(personName,courseCode)
     .then(response => {
         jsonResponse = JSON.parse(response)
